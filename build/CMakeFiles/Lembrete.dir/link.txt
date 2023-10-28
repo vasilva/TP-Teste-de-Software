@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -rdynamic CMakeFiles/Lembrete.dir/main.cpp.o -o Lembrete 
