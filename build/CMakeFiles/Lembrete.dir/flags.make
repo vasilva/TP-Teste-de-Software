@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/mnt/c/Users/vinic/Documents/projetos/lembrete/googletest/include
 
 CXX_FLAGS = -g
 
