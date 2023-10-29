@@ -5,5 +5,6 @@
 
 int main()
 {
+    std::cout << "Lembrete"<< std::endl;
     return 0;
 }

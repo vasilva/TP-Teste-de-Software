@@ -1,5 +1,0 @@
-if(EXISTS "/mnt/c/Users/vinic/Documents/projetos/lembrete/build/mytests[1]_tests.cmake")
-  include("/mnt/c/Users/vinic/Documents/projetos/lembrete/build/mytests[1]_tests.cmake")
-else()
-  add_test(mytests_NOT_BUILT mytests_NOT_BUILT)
-endif()

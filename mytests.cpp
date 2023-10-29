@@ -1,12 +1,13 @@
 #include <gtest/gtest.h>
-#include "lembrete.h"
 
-TEST(data, add)
+TEST(DataTest, TesteDataValida)
 {
-    ASSERT_TRUE(true);
+    Data dt;
+    dt.addData(1, 2, 2023);
+    EXPECT_TRUE(dt.valido());
 }
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
