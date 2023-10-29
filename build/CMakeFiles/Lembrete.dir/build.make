@@ -73,57 +73,57 @@ CMakeFiles/Lembrete.dir/src/data.cpp.o: CMakeFiles/Lembrete.dir/flags.make
 CMakeFiles/Lembrete.dir/src/data.cpp.o: ../src/data.cpp
 CMakeFiles/Lembrete.dir/src/data.cpp.o: CMakeFiles/Lembrete.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/vinic/Documents/projetos/lembrete/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Lembrete.dir/src/data.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lembrete.dir/src/data.cpp.o -MF CMakeFiles/Lembrete.dir/src/data.cpp.o.d -o CMakeFiles/Lembrete.dir/src/data.cpp.o -c /mnt/c/Users/vinic/Documents/projetos/lembrete/src/data.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lembrete.dir/src/data.cpp.o -MF CMakeFiles/Lembrete.dir/src/data.cpp.o.d -o CMakeFiles/Lembrete.dir/src/data.cpp.o -c /mnt/c/Users/vinic/Documents/projetos/lembrete/src/data.cpp
 
 CMakeFiles/Lembrete.dir/src/data.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lembrete.dir/src/data.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/vinic/Documents/projetos/lembrete/src/data.cpp > CMakeFiles/Lembrete.dir/src/data.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/vinic/Documents/projetos/lembrete/src/data.cpp > CMakeFiles/Lembrete.dir/src/data.cpp.i
 
 CMakeFiles/Lembrete.dir/src/data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lembrete.dir/src/data.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/vinic/Documents/projetos/lembrete/src/data.cpp -o CMakeFiles/Lembrete.dir/src/data.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/vinic/Documents/projetos/lembrete/src/data.cpp -o CMakeFiles/Lembrete.dir/src/data.cpp.s
 
 CMakeFiles/Lembrete.dir/src/hora.cpp.o: CMakeFiles/Lembrete.dir/flags.make
 CMakeFiles/Lembrete.dir/src/hora.cpp.o: ../src/hora.cpp
 CMakeFiles/Lembrete.dir/src/hora.cpp.o: CMakeFiles/Lembrete.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/vinic/Documents/projetos/lembrete/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lembrete.dir/src/hora.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lembrete.dir/src/hora.cpp.o -MF CMakeFiles/Lembrete.dir/src/hora.cpp.o.d -o CMakeFiles/Lembrete.dir/src/hora.cpp.o -c /mnt/c/Users/vinic/Documents/projetos/lembrete/src/hora.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lembrete.dir/src/hora.cpp.o -MF CMakeFiles/Lembrete.dir/src/hora.cpp.o.d -o CMakeFiles/Lembrete.dir/src/hora.cpp.o -c /mnt/c/Users/vinic/Documents/projetos/lembrete/src/hora.cpp
 
 CMakeFiles/Lembrete.dir/src/hora.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lembrete.dir/src/hora.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/vinic/Documents/projetos/lembrete/src/hora.cpp > CMakeFiles/Lembrete.dir/src/hora.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/vinic/Documents/projetos/lembrete/src/hora.cpp > CMakeFiles/Lembrete.dir/src/hora.cpp.i
 
 CMakeFiles/Lembrete.dir/src/hora.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lembrete.dir/src/hora.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/vinic/Documents/projetos/lembrete/src/hora.cpp -o CMakeFiles/Lembrete.dir/src/hora.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/vinic/Documents/projetos/lembrete/src/hora.cpp -o CMakeFiles/Lembrete.dir/src/hora.cpp.s
 
 CMakeFiles/Lembrete.dir/src/lembrete.cpp.o: CMakeFiles/Lembrete.dir/flags.make
 CMakeFiles/Lembrete.dir/src/lembrete.cpp.o: ../src/lembrete.cpp
 CMakeFiles/Lembrete.dir/src/lembrete.cpp.o: CMakeFiles/Lembrete.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/vinic/Documents/projetos/lembrete/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lembrete.dir/src/lembrete.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lembrete.dir/src/lembrete.cpp.o -MF CMakeFiles/Lembrete.dir/src/lembrete.cpp.o.d -o CMakeFiles/Lembrete.dir/src/lembrete.cpp.o -c /mnt/c/Users/vinic/Documents/projetos/lembrete/src/lembrete.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lembrete.dir/src/lembrete.cpp.o -MF CMakeFiles/Lembrete.dir/src/lembrete.cpp.o.d -o CMakeFiles/Lembrete.dir/src/lembrete.cpp.o -c /mnt/c/Users/vinic/Documents/projetos/lembrete/src/lembrete.cpp
 
 CMakeFiles/Lembrete.dir/src/lembrete.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lembrete.dir/src/lembrete.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/vinic/Documents/projetos/lembrete/src/lembrete.cpp > CMakeFiles/Lembrete.dir/src/lembrete.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/vinic/Documents/projetos/lembrete/src/lembrete.cpp > CMakeFiles/Lembrete.dir/src/lembrete.cpp.i
 
 CMakeFiles/Lembrete.dir/src/lembrete.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lembrete.dir/src/lembrete.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/vinic/Documents/projetos/lembrete/src/lembrete.cpp -o CMakeFiles/Lembrete.dir/src/lembrete.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/vinic/Documents/projetos/lembrete/src/lembrete.cpp -o CMakeFiles/Lembrete.dir/src/lembrete.cpp.s
 
 CMakeFiles/Lembrete.dir/src/main.cpp.o: CMakeFiles/Lembrete.dir/flags.make
 CMakeFiles/Lembrete.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/Lembrete.dir/src/main.cpp.o: CMakeFiles/Lembrete.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/vinic/Documents/projetos/lembrete/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Lembrete.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lembrete.dir/src/main.cpp.o -MF CMakeFiles/Lembrete.dir/src/main.cpp.o.d -o CMakeFiles/Lembrete.dir/src/main.cpp.o -c /mnt/c/Users/vinic/Documents/projetos/lembrete/src/main.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lembrete.dir/src/main.cpp.o -MF CMakeFiles/Lembrete.dir/src/main.cpp.o.d -o CMakeFiles/Lembrete.dir/src/main.cpp.o -c /mnt/c/Users/vinic/Documents/projetos/lembrete/src/main.cpp
 
 CMakeFiles/Lembrete.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lembrete.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/vinic/Documents/projetos/lembrete/src/main.cpp > CMakeFiles/Lembrete.dir/src/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/vinic/Documents/projetos/lembrete/src/main.cpp > CMakeFiles/Lembrete.dir/src/main.cpp.i
 
 CMakeFiles/Lembrete.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lembrete.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/vinic/Documents/projetos/lembrete/src/main.cpp -o CMakeFiles/Lembrete.dir/src/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/vinic/Documents/projetos/lembrete/src/main.cpp -o CMakeFiles/Lembrete.dir/src/main.cpp.s
 
 # Object files for target Lembrete
 Lembrete_OBJECTS = \

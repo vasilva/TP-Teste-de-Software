@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/lembrete_test.dir/src/data.cpp.o CMakeFiles/lembrete_test.dir/src/hora.cpp.o CMakeFiles/lembrete_test.dir/src/lembrete.cpp.o CMakeFiles/lembrete_test.dir/tests/utest-lembrete.cpp.o -o lembrete_test  lib/libgtest_main.a lib/libgtest.a 
+/usr/bin/g++ CMakeFiles/lembrete_test.dir/src/data.cpp.o CMakeFiles/lembrete_test.dir/src/hora.cpp.o CMakeFiles/lembrete_test.dir/src/lembrete.cpp.o CMakeFiles/lembrete_test.dir/tests/utest-lembrete.cpp.o -o lembrete_test  lib/libgtest_main.a lib/libgtest.a 
