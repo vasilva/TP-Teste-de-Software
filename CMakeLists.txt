@@ -1,18 +1,43 @@
+# $ cmake --version
 cmake_minimum_required(VERSION 3.14)
-project(Lembrete)
 
-# GoogleTest requires at least C++14
-set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+# Set the project name
+project (Lembrete)
 
-include(FetchContent)
-FetchContent_Declare(
-    googletest
-    URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+# add googletest subdirectory
+add_subdirectory(googletest)
+
+# this is so we can #include <gtest/gtest.h> 
+include_directories(googletest/include)
+
+# add header files in the lib
+include_directories(lib) 
+
+# Create a sources variable with a link to all cpp files to compile
+set(SOURCES
+    src/data.cpp
+    src/hora.cpp
+    src/lembrete.cpp
+    src/main.cpp
 )
-# For Windows: Prevent overriding the parent project's compiler/linker settings
-set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-FetchContent_MakeAvailable(googletest)
+
+# Add an executable with the above sources
+add_executable(Lembrete ${SOURCES})
+
+target_include_directories(Lembrete
+    PRIVATE 
+        ${PROJECT_SOURCE_DIR}/lib
+)
 
 enable_testing()
+add_executable(lembrete_test
+    src/data.cpp 
+    src/hora.cpp 
+    src/lembrete.cpp 
+    tests/utest-lembrete.cpp
+)
 
+target_link_libraries(lembrete_test GTest::gtest_main)
+
+include(GoogleTest)
+gtest_discover_tests(lembrete_test)

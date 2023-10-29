@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /mnt/c/Users/vinic/Documents/projetos/lembrete/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -87,7 +97,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"gmock\" \"gtest\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -162,6 +172,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Lembrete
+
+# Build rule for target.
+Lembrete: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lembrete
+.PHONY : Lembrete
+
+# fast build rule for target.
+Lembrete/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lembrete.dir/build.make CMakeFiles/Lembrete.dir/build
+.PHONY : Lembrete/fast
+
+#=============================================================================
+# Target rules for targets named lembrete_test
+
+# Build rule for target.
+lembrete_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lembrete_test
+.PHONY : lembrete_test
+
+# fast build rule for target.
+lembrete_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lembrete_test.dir/build.make CMakeFiles/lembrete_test.dir/build
+.PHONY : lembrete_test/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -171,7 +207,7 @@ gmock: cmake_check_build_system
 
 # fast build rule for target.
 gmock/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock.dir/build.make googletest/googlemock/CMakeFiles/gmock.dir/build
 .PHONY : gmock/fast
 
 #=============================================================================
@@ -184,7 +220,7 @@ gmock_main: cmake_check_build_system
 
 # fast build rule for target.
 gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+	$(MAKE) $(MAKESILENT) -f googletest/googlemock/CMakeFiles/gmock_main.dir/build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
 .PHONY : gmock_main/fast
 
 #=============================================================================
@@ -197,7 +233,7 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 #=============================================================================
@@ -210,8 +246,137 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+	$(MAKE) $(MAKESILENT) -f googletest/googletest/CMakeFiles/gtest_main.dir/build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
+
+src/data.o: src/data.cpp.o
+.PHONY : src/data.o
+
+# target to build an object file
+src/data.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lembrete.dir/build.make CMakeFiles/Lembrete.dir/src/data.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lembrete_test.dir/build.make CMakeFiles/lembrete_test.dir/src/data.cpp.o
+.PHONY : src/data.cpp.o
+
+src/data.i: src/data.cpp.i
+.PHONY : src/data.i
+
+# target to preprocess a source file
+src/data.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lembrete.dir/build.make CMakeFiles/Lembrete.dir/src/data.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lembrete_test.dir/build.make CMakeFiles/lembrete_test.dir/src/data.cpp.i
+.PHONY : src/data.cpp.i
+
+src/data.s: src/data.cpp.s
+.PHONY : src/data.s
+
+# target to generate assembly for a file
+src/data.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lembrete.dir/build.make CMakeFiles/Lembrete.dir/src/data.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lembrete_test.dir/build.make CMakeFiles/lembrete_test.dir/src/data.cpp.s
+.PHONY : src/data.cpp.s
+
+src/hora.o: src/hora.cpp.o
+.PHONY : src/hora.o
+
+# target to build an object file
+src/hora.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lembrete.dir/build.make CMakeFiles/Lembrete.dir/src/hora.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lembrete_test.dir/build.make CMakeFiles/lembrete_test.dir/src/hora.cpp.o
+.PHONY : src/hora.cpp.o
+
+src/hora.i: src/hora.cpp.i
+.PHONY : src/hora.i
+
+# target to preprocess a source file
+src/hora.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lembrete.dir/build.make CMakeFiles/Lembrete.dir/src/hora.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lembrete_test.dir/build.make CMakeFiles/lembrete_test.dir/src/hora.cpp.i
+.PHONY : src/hora.cpp.i
+
+src/hora.s: src/hora.cpp.s
+.PHONY : src/hora.s
+
+# target to generate assembly for a file
+src/hora.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lembrete.dir/build.make CMakeFiles/Lembrete.dir/src/hora.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lembrete_test.dir/build.make CMakeFiles/lembrete_test.dir/src/hora.cpp.s
+.PHONY : src/hora.cpp.s
+
+src/lembrete.o: src/lembrete.cpp.o
+.PHONY : src/lembrete.o
+
+# target to build an object file
+src/lembrete.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lembrete.dir/build.make CMakeFiles/Lembrete.dir/src/lembrete.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lembrete_test.dir/build.make CMakeFiles/lembrete_test.dir/src/lembrete.cpp.o
+.PHONY : src/lembrete.cpp.o
+
+src/lembrete.i: src/lembrete.cpp.i
+.PHONY : src/lembrete.i
+
+# target to preprocess a source file
+src/lembrete.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lembrete.dir/build.make CMakeFiles/Lembrete.dir/src/lembrete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lembrete_test.dir/build.make CMakeFiles/lembrete_test.dir/src/lembrete.cpp.i
+.PHONY : src/lembrete.cpp.i
+
+src/lembrete.s: src/lembrete.cpp.s
+.PHONY : src/lembrete.s
+
+# target to generate assembly for a file
+src/lembrete.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lembrete.dir/build.make CMakeFiles/Lembrete.dir/src/lembrete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lembrete_test.dir/build.make CMakeFiles/lembrete_test.dir/src/lembrete.cpp.s
+.PHONY : src/lembrete.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lembrete.dir/build.make CMakeFiles/Lembrete.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lembrete.dir/build.make CMakeFiles/Lembrete.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lembrete.dir/build.make CMakeFiles/Lembrete.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+tests/utest-lembrete.o: tests/utest-lembrete.cpp.o
+.PHONY : tests/utest-lembrete.o
+
+# target to build an object file
+tests/utest-lembrete.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lembrete_test.dir/build.make CMakeFiles/lembrete_test.dir/tests/utest-lembrete.cpp.o
+.PHONY : tests/utest-lembrete.cpp.o
+
+tests/utest-lembrete.i: tests/utest-lembrete.cpp.i
+.PHONY : tests/utest-lembrete.i
+
+# target to preprocess a source file
+tests/utest-lembrete.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lembrete_test.dir/build.make CMakeFiles/lembrete_test.dir/tests/utest-lembrete.cpp.i
+.PHONY : tests/utest-lembrete.cpp.i
+
+tests/utest-lembrete.s: tests/utest-lembrete.cpp.s
+.PHONY : tests/utest-lembrete.s
+
+# target to generate assembly for a file
+tests/utest-lembrete.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lembrete_test.dir/build.make CMakeFiles/lembrete_test.dir/tests/utest-lembrete.cpp.s
+.PHONY : tests/utest-lembrete.cpp.s
 
 # Help Target
 help:
@@ -225,10 +390,28 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... test"
+	@echo "... Lembrete"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... lembrete_test"
+	@echo "... src/data.o"
+	@echo "... src/data.i"
+	@echo "... src/data.s"
+	@echo "... src/hora.o"
+	@echo "... src/hora.i"
+	@echo "... src/hora.s"
+	@echo "... src/lembrete.o"
+	@echo "... src/lembrete.i"
+	@echo "... src/lembrete.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... tests/utest-lembrete.o"
+	@echo "... tests/utest-lembrete.i"
+	@echo "... tests/utest-lembrete.s"
 .PHONY : help
 
 

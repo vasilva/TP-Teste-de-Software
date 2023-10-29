@@ -1,0 +1,5 @@
+if(EXISTS "/mnt/c/Users/vinic/Documents/projetos/lembrete/build/lembrete_test[1]_tests.cmake")
+  include("/mnt/c/Users/vinic/Documents/projetos/lembrete/build/lembrete_test[1]_tests.cmake")
+else()
+  add_test(lembrete_test_NOT_BUILT lembrete_test_NOT_BUILT)
+endif()

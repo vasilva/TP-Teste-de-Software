@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/Lembrete.dir/src/data.cpp.o CMakeFiles/Lembrete.dir/src/hora.cpp.o CMakeFiles/Lembrete.dir/src/lembrete.cpp.o CMakeFiles/Lembrete.dir/src/main.cpp.o -o Lembrete 
