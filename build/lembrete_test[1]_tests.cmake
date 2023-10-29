@@ -1,3 +1,5 @@
-add_test( PersonTestSuite.functionA /mnt/c/Users/vinic/Documents/projetos/lembrete/build/lembrete_test [==[--gtest_filter=PersonTestSuite.functionA]==] --gtest_also_run_disabled_tests)
-set_tests_properties( PersonTestSuite.functionA PROPERTIES WORKING_DIRECTORY /mnt/c/Users/vinic/Documents/projetos/lembrete/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set( lembrete_test_TESTS PersonTestSuite.functionA)
+add_test( DataTest.TestDataValida /mnt/c/Users/vinic/Documents/projetos/lembrete/build/lembrete_test [==[--gtest_filter=DataTest.TestDataValida]==] --gtest_also_run_disabled_tests)
+set_tests_properties( DataTest.TestDataValida PROPERTIES WORKING_DIRECTORY /mnt/c/Users/vinic/Documents/projetos/lembrete/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( HoraTest.TestHoraValida /mnt/c/Users/vinic/Documents/projetos/lembrete/build/lembrete_test [==[--gtest_filter=HoraTest.TestHoraValida]==] --gtest_also_run_disabled_tests)
+set_tests_properties( HoraTest.TestHoraValida PROPERTIES WORKING_DIRECTORY /mnt/c/Users/vinic/Documents/projetos/lembrete/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( lembrete_test_TESTS DataTest.TestDataValida HoraTest.TestHoraValida)
